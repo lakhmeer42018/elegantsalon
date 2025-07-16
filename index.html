@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegant Hair Salon</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #111;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 10px 18px;
+    }
+
+    .hero {
+      background-image: url(images/photo-1521590832167-7bcbfaa6381f.avif);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section h2 {
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      border: none;
+      color: #f5f5f5;
+    }
+
+    .card img {
+      max-height: 240px;
+      object-fit: cover;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
+    .gallery {
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      font-size: 28px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      z-index: 999;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+    }
+
+    input, button {
+      border-radius: 8px !important;
+    }
+
+    .btn-light {
+      background-color: #fff;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .btn-light:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Elegant Salon</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rates">Rates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Refined Styles. Relaxed Vibes.</h1>
+    <p>Experience the art of hair at our studio</p>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section text-center">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img  src="images/istockphoto-2152673203-612x612.webp" alt="Haircut">
+          <div class="card-body">
+            <h5 class="card-title">Haircut</h5>
+            <p class="card-text">Modern cuts & styling tailored to your look. ($25)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/istockphoto-1651228548-1024x1024.jpg" class="card-img-top" alt="Coloring">
+          <div class="card-body">
+            <h5 class="card-title">Hair Coloring</h5>
+            <p class="card-text">Premium color treatments for all hair types. ($60)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/istockphoto-1281532877-612x612.webp" class="card-img-top" alt="Blow Dry">
+          <div class="card-body">
+            <h5 class="card-title">Blow Dry</h5>
+            <p class="card-text">Smooth, voluminous blowouts in minutes. ($20)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/istockphoto-2082305710-612x612.jpg" class="card-img-top" alt="Bridal">
+          <div class="card-body">
+            <h5 class="card-title">Bridal Styling</h5>
+            <p class="card-text">Elegant bridal looks for your special day. ($150)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Gallery -->
+<section id="gallery" class="section text-center bg-black">
+  <div class="container">
+    <h2 class="text-white mb-4">Salon Interior & Essentials</h2>
+    <div class="row g-4">
+      <!-- 9 images with descriptions -->
+      <div class="col-md-4"><div class="card"><img src="images/istockphoto-1856117770-612x612.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">ComfortPro Chair – Sleek & ergonomic design.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/istockphoto-1298989535-612x612.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">LuxeMirror™ with LED edges for perfect styling.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/istockphoto-1357529827-612x612.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">MapleWood™ styling table with smooth drawers.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/istockphoto-2150776419-612x612.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">WashLux™ Recliner & Sink for comfort shampooing.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/xs_2.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">Rolling Trolley by ProSalonR – Storage at your side.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/istockphoto-1425242938-612x612.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">GlowTech™ Overhead lighting for focused work.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/call.jpg" class="card-img-top gallery"><div class="card-body"><p class="card-text">Welcoming desk with ElegantLogo™ branding.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/art.jpg" class="card-img-top gallery"><div class="card-body"><p class="card-text">Artistic wall decor with GlamThemes™ aesthetics.</p></div></div></div>
+      <div class="col-md-4"><div class="card"><img src="images/shelve.webp" class="card-img-top gallery"><div class="card-body"><p class="card-text">Showcase shelves for branded haircare products.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Rates -->
+<section id="rates" class="section text-center bg-black text-white">
+  <div class="container">
+    <h2 class="mb-4">Service Rates</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><p>Hair Cutting - <strong>$25</strong></p></div>
+      <div class="col-6 col-md-3"><p>Hair Coloring - <strong>$60</strong></p></div>
+      <div class="col-6 col-md-3"><p>Blow Dry - <strong>$20</strong></p></div>
+      <div class="col-6 col-md-3"><p>Bridal Styling - <strong>$150</strong></p></div>
+      <div class="col-6 col-md-3"><p>Beard Trim - <strong>$15</strong></p></div>
+      <div class="col-6 col-md-3"><p>Hair Wash - <strong>$10</strong></p></div>
+      <div class="col-6 col-md-3"><p>Eyebrow Shaping - <strong>$8</strong></p></div>
+      <div class="col-6 col-md-3"><p>Facial - <strong>$30</strong></p></div>
+      <div class="col-6 col-md-3"><p>Hot Oil Treatment - <strong>$18</strong></p></div>
+      <div class="col-6 col-md-3"><p>Scalp Massage - <strong>$12</strong></p></div>
+      <div class="col-6 col-md-3"><p>Hair Spa - <strong>$35</strong></p></div>
+      <div class="col-6 col-md-3"><p>Threading - <strong>$7</strong></p></div>
+      <div class="col-6 col-md-3"><p>Henna Application - <strong>$22</strong></p></div>
+      <div class="col-6 col-md-3"><p>Shaving - <strong>$10</strong></p></div>
+      <div class="col-6 col-md-3"><p>Makeup - <strong>$80</strong></p></div>
+      <div class="col-6 col-md-3"><p>Hair Rebonding - <strong>$120</strong></p></div>
+      <div class="col-6 col-md-3"><p>Keratin Treatment - <strong>$110</strong></p></div>
+      <div class="col-6 col-md-3"><p>Hair Highlights - <strong>$75</strong></p></div>
+      <div class="col-6 col-md-3"><p>Skin Polishing - <strong>$50</strong></p></div>
+      <div class="col-6 col-md-3"><p>Manicure & Pedicure - <strong>$40</strong></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section id="booking" class="section bg-dark text-white text-center">
+  <div class="container">
+    <h2 class="mb-4">Book an Appointment</h2>
+    <form class="row g-3 justify-content-center">
+      <div class="col-md-3"><input type="text" class="form-control" placeholder="Your Name" required></div>
+      <div class="col-md-3"><input type="text" class="form-control" placeholder="Phone Number" required></div>
+      <div class="col-md-2"><input type="date" class="form-control" required></div>
+      <div class="col-md-2"><input type="time" class="form-control" required></div>
+      <div class="col-md-2"><button class="btn btn-light w-100">Submit</button></div>
+    </form>
+    <p class="mt-3 text-muted">* Frontend demo only. Backend not connected.</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section text-center bg-dark text-white">
+  <div class="container">
+    <h2 class="mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3"><i class="fas fa-phone fa-lg mb-2"></i><p>(123) 456-7890</p></div>
+      <div class="col-md-4 mb-3"><i class="fas fa-envelope fa-lg mb-2"></i><p>contact@elegantsalon.com</p></div>
+      <div class="col-md-4 mb-3"><i class="fas fa-map-marker-alt fa-lg mb-2"></i><p>123 Main Street, Glamour City</p></div>
+    </div>
+    <div class="social mt-3">
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Elegant Hair Salon. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
